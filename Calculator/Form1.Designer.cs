@@ -3,7 +3,7 @@ namespace Calculator
 {
     partial class Form1
     {
-        /// <summary> aaa
+        /// <summary> eee
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
