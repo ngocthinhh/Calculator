@@ -32,6 +32,7 @@ namespace Calculator
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.buttonCong = new System.Windows.Forms.Button();
+            this.textBoxKQ = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -49,6 +50,7 @@ namespace Calculator
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(270, 26);
             this.textBox2.TabIndex = 0;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // buttonCong
             // 
@@ -60,16 +62,27 @@ namespace Calculator
             this.buttonCong.Text = "+";
             this.buttonCong.UseVisualStyleBackColor = true;
             // 
+            // textBoxKQ
+            // 
+            this.textBoxKQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.textBoxKQ.Location = new System.Drawing.Point(275, 280);
+            this.textBoxKQ.Name = "textBoxKQ";
+            this.textBoxKQ.Size = new System.Drawing.Size(270, 26);
+            this.textBoxKQ.TabIndex = 0;
+            this.textBoxKQ.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonCong);
+            this.Controls.Add(this.textBoxKQ);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,6 +93,7 @@ namespace Calculator
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button buttonCong;
+        private System.Windows.Forms.TextBox textBoxKQ;
     }
 }
 
