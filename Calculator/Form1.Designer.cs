@@ -33,6 +33,7 @@ namespace Calculator
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.buttonCong = new System.Windows.Forms.Button();
             this.textBoxKQ = new System.Windows.Forms.TextBox();
+            this.buttonTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -55,7 +56,7 @@ namespace Calculator
             // buttonCong
             // 
             this.buttonCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.buttonCong.Location = new System.Drawing.Point(322, 157);
+            this.buttonCong.Location = new System.Drawing.Point(176, 154);
             this.buttonCong.Name = "buttonCong";
             this.buttonCong.Size = new System.Drawing.Size(143, 54);
             this.buttonCong.TabIndex = 1;
@@ -71,11 +72,22 @@ namespace Calculator
             this.textBoxKQ.TabIndex = 0;
             this.textBoxKQ.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
+            // buttonTru
+            // 
+            this.buttonTru.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.buttonTru.Location = new System.Drawing.Point(486, 154);
+            this.buttonTru.Name = "buttonTru";
+            this.buttonTru.Size = new System.Drawing.Size(143, 54);
+            this.buttonTru.TabIndex = 1;
+            this.buttonTru.Text = "-";
+            this.buttonTru.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonTru);
             this.Controls.Add(this.buttonCong);
             this.Controls.Add(this.textBoxKQ);
             this.Controls.Add(this.textBox2);
@@ -94,6 +106,7 @@ namespace Calculator
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button buttonCong;
         private System.Windows.Forms.TextBox textBoxKQ;
+        private System.Windows.Forms.Button buttonTru;
     }
 }
 
