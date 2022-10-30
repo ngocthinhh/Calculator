@@ -62,6 +62,7 @@ namespace Calculator
             this.buttonCong.TabIndex = 1;
             this.buttonCong.Text = "+";
             this.buttonCong.UseVisualStyleBackColor = true;
+            this.buttonCong.Click += new System.EventHandler(this.buttonCong_Click);
             // 
             // textBoxKQ
             // 
@@ -81,6 +82,7 @@ namespace Calculator
             this.buttonTru.TabIndex = 1;
             this.buttonTru.Text = "-";
             this.buttonTru.UseVisualStyleBackColor = true;
+            this.buttonTru.Click += new System.EventHandler(this.buttonTru_Click);
             // 
             // Form1
             // 

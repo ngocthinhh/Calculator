@@ -26,5 +26,15 @@ namespace Calculator
         {
 
         }
+
+        private void buttonCong_Click(object sender, EventArgs e)
+        {
+            textBoxKQ.Text = (int.Parse(textBox1.Text) + int.Parse(textBox2.Text)).ToString(); 
+        }
+
+        private void buttonTru_Click(object sender, EventArgs e)
+        {
+            textBoxKQ.Text = (int.Parse(textBox1.Text) - int.Parse(textBox2.Text)).ToString();
+        }
     }
 }
